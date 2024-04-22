@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="./serie-list.component.css">
+<div class="container"> <!-- Contenedor principal para consistencia -->
+    <div class="header"> <!-- Centrar el encabezado -->
+        <h1>TV SERIES</h1>
+    </div>
+
+    <div class="row"> <!-- Contenedor de filas para dividir la pantalla -->
+        <div class="col-md-6"> <!-- Columna para la tabla -->
+            <table class="table" id="seriesTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Channel</th>
+                        <th>Seasons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let serie of series">
+                        <td>{{serie.id}}</td>
+                        <td>{{serie.name}}</td>
+                        <td>{{serie.channel}}</td>
+                        <td>{{serie.seasons}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h4>Seasons average: {{averageSeasons}}</h4>
+</div>

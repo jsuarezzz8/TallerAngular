@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=B612');
+
+.header {
+    background-color: #007777; /* Color de fondo similar al mostrado */
+    color: white; /* Texto en color blanco */
+    text-align: left; /* Texto centrado */
+    padding: 10px; /* Espaciado interno */
+    font-family: Arial, sans-serif; /* Fuente utilizada */
+}
+
+/* Estilo para el título principal */
+.header h1 {
+    margin: 0; /* Sin margen extra */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+#seriesTable {
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para el encabezado de la tabla */
+#seriesTable th {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 8px;
+    text-align: left;
+    font-family: "B612";
+}
+
+/* Estilos para las celdas de la tabla */
+#seriesTable td {
+    padding: 8px;
+    border-bottom: 1px solid #dee2e6; /* Línea divisoria entre filas */
+    font-family: "B612";
+}
+
+/* Estilos para filas impares */
+#seriesTable tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Color de fondo para filas impares */
+}
+
+/* Estilos para filas pares */
+#seriesTable tbody tr:nth-child(even) {
+    background-color: #e9ecef; /* Color de fondo para filas pares */
+}
+
+/* Estilos para la primera columna */
+#seriesTable tbody th {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto blanco */
+    padding: 8px;
+    text-align: center;
+    width: 50px; /* Ancho fijo para la primera columna */
+    font-family: "B612";
+}
